@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="../static/index.css"> 
+
+    
+</head>
+<body>
+  
+
+    <form method="POST" action="/c" class="grid">
+        <center>
+            {% if name %}
+            <h3 style="color:black;">Hello {{name}}, How are you ? </h3>
+            {% endif %}
+        </center>
+        Enter Your Text: <textarea name="name" id="name"></textarea><br>
+        <input type="submit" value="Submit" class="file_submit">
+        <input type="submit" value="Clear text" class="file_submit1"><br>
+
+
+    </form>
+
+
+</body>
+</html>
